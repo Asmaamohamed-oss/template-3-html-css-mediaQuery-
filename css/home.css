@@ -1,0 +1,97 @@
+
+.home-section{
+    height: 100vh;
+    background: url(../images/Home/pexels-ken-tomita-389819.jpg);
+    /* background:linear-gradient(rgba(0,0,0, 0.4) ,rgba(0,0, 0,0.4 )) , url(../images/Home/pexels-pixabay-265667.jpg); */
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+}
+
+.home-content{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+
+.home-content .home-title{
+    font-size: 3rem;
+    color: var(--font-color);
+    margin-bottom:2px ;
+}
+
+.home-content .home-info{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: var(--main-color);
+}
+.home-content .home-desc{
+    font-size: 1.7rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+.home-content .home-desc span{
+    font-weight: bold;
+}
+
+
+.home-content .home-btn{
+    width: 150px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    transition: 0.4s linear;
+    font-size: 1.2rem;
+    background-color: var(--main-color);
+    color: var(--font-color);
+
+}
+
+.home-content .home-btn:hover{
+    color: var(--main-color);
+    background-color: var(--font-color);
+}
+
+
+@media(max-width:375px){
+    .home-content .home-title{
+        font-size: 1.5rem;
+    }
+    .home-content .home-info{
+        font-size: 1.3rem;
+    }
+    .home-content .home-desc{
+        font-size: 1rem;
+    }
+}
+
+
+@media(max-width:768px){
+ 
+    .home-content .home-title{
+        font-size: 2.5rem;
+        margin-bottom: 3px;
+        color: var(--main-color);
+    }
+    .home-content .home-info{
+        font-size: 1.8rem;
+        margin-bottom: 3px;
+        color: var(--font-color);
+    }
+    .home-content .home-desc{
+        font-size: 1.3rem;
+        margin-bottom: 6px;
+    }
+    .home-content .home-btn{
+        width: 100px;
+        padding: 5px;
+        font-size: 16px;
+    }
+}
+
+
+

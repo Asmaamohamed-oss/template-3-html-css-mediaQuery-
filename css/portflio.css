@@ -1,0 +1,124 @@
+
+.portoflio-section{
+    background-color: #f8f8f8;
+}
+.portoflio-heading {
+    text-align: center;
+    padding: 30px 40px ;
+}
+.portoflio-heading h2{
+    color: rgb(68, 67, 67);
+     font-size: 30px; 
+}
+
+.portoflio-heading h2 span {
+    font-weight: normal;
+    color: rgb(114, 111, 111);
+}
+
+ .portoflio-heading .poroflio-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portoflio-heading .poroflio-list li {
+    padding: 5px ;
+    margin: 20px;
+    width: 70px;
+    border-radius: 2px;
+    transition: color 0.3s linear;
+    color: rgb(68, 67, 67);
+}
+.portoflio-heading .poroflio-list li:hover{
+    background-color: var(--main-color);
+}
+
+
+.portoflio-heading .poroflio-list li:first-child{
+    background-color: var(--main-color);
+}
+
+/*img*/
+.portoflio-content {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    justify-content: center;
+    align-items: center;
+}
+.poroflio-item img{
+    width: 100%;
+}
+
+.poroflio-item{
+    width: 25%;
+    position: relative;
+}
+
+.poroflio-item .overlay {
+    font-size: 14px;
+    position: absolute;
+    top: 0 ;
+    left:0;
+    bottom: 0;
+    right: 0;
+    /* background-color: rgba(235, 84,36, 0.5); */
+    background:linear-gradient(rgba(197, 56, 13, 0.5) ,rgba(62, 124, 148, 0.5)) ;
+    text-align: center;
+    /* padding: 80px 50px; */
+    opacity: 0;
+    visibility: hidden; 
+    transform: scaleX(0);  
+    transition: all 0.3s linear;
+    color:rgb(172, 167, 167);
+    
+}
+
+
+
+.poroflio-item .overlay button{
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 0;
+    border: 2px solid var(--main-color);
+}
+
+
+
+
+.poroflio-item:hover .overlay{
+     opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);  
+}
+
+
+/* Media*/
+@media (max-width: 575px){
+    .poroflio-item{
+        width: 100%;
+    
+    }
+
+    .portoflio-heading .poroflio-list  {
+        display: block;
+    }
+    .portoflio-heading .poroflio-list li  {
+        margin: 10px auto ;
+
+    }
+}
+
+@media (min-width:576px)and (max-width:768px){
+    .poroflio-item{
+        width: 50%;
+    
+    }
+}
